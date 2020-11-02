@@ -1,0 +1,11 @@
+<div class="bod">
+  <div style="padding: 30px;">
+  <div>User name:<input [(ngModel)]="username" type="text" class="form-control"></div>
+  <div>password:<input [(ngModel)]="password" type="password" class="form-control"></div>
+  <div style="padding-top:20px; padding-left: 87%;"><button type="button" class="btn" style="background-color:#08a5ff" (click)="onLogin(username,password)">Login</button></div>
+</div>
+</div><br><hr>
+
+<div *ngIf="funct">
+    <list-root [get-fun]="funct"  [get-data]="loogedInUser"></list-root>
+</div>

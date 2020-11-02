@@ -1,0 +1,38 @@
+<div *ngIf=tabData>
+	<h1>{{tabData.firstName}}</h1>
+	<div>
+		<label>Register No.:
+		  <input [(ngModel)]="tabData.registerNo" placeholder="Register No."/>
+		</label>
+	  </div>
+	  <div>
+		<label>Name :
+		  <input [(ngModel)]="tabData.firstName" placeholder="Name"/>
+		</label>
+	  </div>
+	  <div>
+		<label>Date of Birth :
+		  <input [(ngModel)]="tabData.dateOfBirth" placeholder="Date of Birth"/>
+		</label>
+	  </div>
+	  <div>
+		<label>Mobile No.:
+		  <input [(ngModel)]="tabData.mobileNo" placeholder="Mobile No."/>
+		</label>
+	  </div>
+	  <div>
+		<label>Mark 1:
+		  <input [(ngModel)]="tabData.mark1" placeholder="Mark 1"/>
+		</label>
+	  </div>
+	  <div>
+		<label>Mark 2:
+		  <input [(ngModel)]="tabData.mark2" placeholder="Mark 2"/>
+		</label>
+	  </div>
+	  <div>
+		<label>Mark 3:
+		  <input [(ngModel)]="tabData.mark3" placeholder="Mark 3"/>
+		</label>
+	  </div>
+</div>

@@ -1,0 +1,20 @@
+<table class="table">
+    <tr>
+        <th>Register No.</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Date of Birth</th>
+        <th>Mark-1</th>
+        <th>Mark-2</th>
+        <th>Mark-3</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.registerNo}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.dateOfBirth}}</td>
+        <td>{{user.mark1}}</td>
+        <td>{{user.mark2}}</td>
+        <td>{{user.mark3}}</td>
+    </tr>
+</table>

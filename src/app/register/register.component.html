@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-sm-4 img-thumbnail" style="padding:30px;background-color:#01ffd9">
+<div>
+    <div>Register No:<input [(ngModel)]="user.registerNo" type="number" class="form-control"></div>
+    <div>Firstname:<input [(ngModel)]="user.firstName" type="text" class="form-control"></div>
+    <div>Lastname:<input [(ngModel)]="user.lastName" type="text" class="form-control"></div>
+    <div>Date of Birth:<input [(ngModel)]="user.dateOfBirth" type="date" class="form-control"></div>
+    <div>Mark-1:<input [(ngModel)]="user.mark1" type="number" class="form-control"></div>
+    <div>Mark-2:<input [(ngModel)]="user.mark2" type="number" class="form-control"></div>
+    <div>Mark-3:<input [(ngModel)]="user.mark3" type="number" class="form-control"></div>
+    <div style="padding-top:20px"><button type="button" class="btn" (click)="onSubmit(user)">Submit</button></div>
+</div>
+</div>
+<div class="col-sm-8 img-thumbnail" style="padding:30px;background-color:#ff0842">
+<login-root [login-data]="users"></login-root>
+</div>
+</div>
+<app-table [table-data]="users"></app-table>
